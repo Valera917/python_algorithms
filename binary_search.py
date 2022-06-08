@@ -11,10 +11,10 @@ def binary_search(arr: list, item: int, low=None, high=None) -> int | None:
         if middle_value == item:
             return middle
 
-        elif middle_value > item:
+        if middle_value > item:
             return binary_search(arr, item, low, middle - 1)
 
-        elif middle_value < item:
+        else:
             return binary_search(arr, item, middle + 1, high)
 
     return None
