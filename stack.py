@@ -1,6 +1,6 @@
 test_string = input('Enter the string: ')
 stack = []
-flag_verify = True
+fl_verify = True
 
 for char in test_string:
     if char in '([{':
@@ -18,11 +18,11 @@ for char in test_string:
         if last_el == '{' and char == '}':
             continue
 
-        flag_verify = False
+        fl_verify = False
         break
 
 
-if flag_verify and not stack:
+if fl_verify and not stack:
     print(True)
 else:
     print(False)
