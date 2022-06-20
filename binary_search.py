@@ -20,5 +20,5 @@ def binary_search(arr: list, item: int, low=None, high=None) -> int | None:
     return None
 
 
-lst = [331, 893, 656, 176, 172, 104, 938, 202, 580, 620]
-print(binary_search(lst, 580))
+lst = [0, 12, 35, 89, 134, 205, 206, 345, 512, 1024]
+print(binary_search(lst, 35))
